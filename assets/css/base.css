@@ -16,3 +16,45 @@ html{
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+
+
+/* Button */
+.btn{
+    min-width: 124px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 16px;
+    background-color: var(--white-color);
+}   
+
+.btn.btn--normal:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn.btn--size-s{
+    height: 32px;
+    font-size: 12px;
+    padding: 0 8px;
+}
+
+.btn.btn--primary{
+    color:var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn.btn--disabled{
+    color: #949494;
+    cursor: default;
+    filter: brightness(80%);
+    background-color: #c3c3c3;
+}
